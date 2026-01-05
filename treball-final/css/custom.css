@@ -1,0 +1,30 @@
+.reveal .slides h1 {
+  font-size: 2.0rem;
+}
+
+.reveal .slides section {
+  font-size: 1.5rem;
+}
+
+.reveal .slides h2 {
+  font-size: 1.5rem;
+}
+
+.reveal .slides img {
+  display: block;
+  margin: 0 auto;
+}
+
+.reveal .slides p {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/*change font*/
+.reveal .slides {
+  font-family: 'Times New Roman', serif;
+}
+
+.reveal .slides * {
+  font-family: inherit;
+}
