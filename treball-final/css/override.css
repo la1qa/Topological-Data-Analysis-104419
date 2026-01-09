@@ -1,0 +1,10 @@
+/* Reveal.js layout reset for custom slides */
+.reveal .slides .title-slide {
+  text-align: initial;
+}
+
+.reveal .slides .title-slide > * {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
