@@ -76,13 +76,28 @@
   justify-content: space-between; /* ← exactly what you want */
   align-items: center;
   width: 100%;
-  margin: 0 0;
+  margin: 1rem 0;
+}
+
+.reveal .slides section:first-of-type .uni {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 .reveal .slides section:first-of-type #UPenn_logo,
 .reveal .slides section:first-of-type #UAB_logo {
   height: 60px;
   width: auto;
+}
+
+.reveal .slides section:first-of-type #UPenn_name,
+.reveal .slides section:first-of-type #UAB_name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.3rem;
+  width: fit-content;
 }
 
 /* Split authors and dates into left (UPenn) / right (UAB) columns */
