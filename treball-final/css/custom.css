@@ -10,21 +10,112 @@
   font-size: 1.5rem;
 }
 
-.reveal .slides img {
-  display: block;
-  margin: 0 auto;
-}
-
 .reveal .slides p {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
-/*change font*/
+/* change font */
 .reveal .slides {
   font-family: 'Times New Roman', serif;
 }
 
 .reveal .slides * {
   font-family: inherit;
+}
+
+/* Title slide layout */
+.reveal .slides section:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-row-gap: 0.8rem;
+  grid-column-gap: 2rem;
+  justify-items: stretch;
+  align-items: start;
+  padding: 1rem 0;
+}
+
+.reveal .slides section:first-of-type h1 {
+  grid-column: 1 / -1;
+  font-size: clamp(1.8rem, 2.2vw + 1rem, 2.4rem);
+  line-height: 1.2;
+  max-width: 80ch;
+  text-align: center;
+  margin: 0.2rem 0 0.6rem;
+}
+
+.reveal .slides section:first-of-type h2 {
+  grid-column: 1 / -1;
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+  text-align: center;
+  opacity: 0.9;
+  font-style: italic;
+  width: 75%;
+  justify-self: center;
+}
+
+.reveal .slides section:first-of-type #logos {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between; /* ← exactly what you want */
+  align-items: center;
+  width: 100%;
+  margin: 0 0;
+}
+
+.reveal .slides section:first-of-type #UPenn_logo,
+.reveal .slides section:first-of-type #UAB_logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Split authors and dates into left (UPenn) / right (UAB) columns */
+.reveal .slides section:first-of-type #authors,
+.reveal .slides section:first-of-type #dates {
+  grid-column: 1 / -1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  align-items: start;
+}
+
+.reveal .slides section:first-of-type #authors {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.reveal .slides section:first-of-type .upenn-authors {
+  grid-column: 1;
+  text-align: left;
+}
+
+.reveal .slides section:first-of-type .jo {
+  grid-column: 2;
+  text-align: right;
+}
+
+/* Dates: ICRAT 2018 (left=UPenn), Jan 2026 (right=UAB) */
+.reveal .slides section:first-of-type #dates p:first-child {
+  grid-column: 1;
+  text-align: left;
+}
+
+.reveal .slides section:first-of-type #dates p:last-child {
+  grid-column: 2;
+  text-align: right;
+}
+
+.reveal .slides section:first-of-type #authors {
+  float: none;
+}
+
+.reveal .slides section:first-of-type #authors p,
+.reveal .slides section:first-of-type #dates p {
+  margin: 0.1rem 0;
+  font-size: 1rem;
 }
