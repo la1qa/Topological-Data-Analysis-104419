@@ -24,6 +24,12 @@
   font-family: inherit;
 }
 
+/* Stop Reveal from auto-centering everything */
+.reveal .slides section:first-of-type > * {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 /* Title slide layout */
 .reveal .slides section:first-of-type {
   display: grid;
