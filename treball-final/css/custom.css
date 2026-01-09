@@ -61,7 +61,7 @@
 
 .reveal .slides section:first-of-type h1 {
   grid-column: 1 / -1;
-  font-size: clamp(1.8rem, 2.2vw + 1rem, 2.4rem);
+  font-size: clamp(1.8rem, 2.2vw + 1.25rem, 2.4rem);
   line-height: 1.2;
   max-width: 80ch;
   text-align: center;
@@ -71,7 +71,7 @@
 .reveal .slides section:first-of-type h2 {
   grid-column: 1 / -1;
   font-size: 1.3rem;
-  margin: 0 0 0.5rem;
+  margin: 0.75rem 0;
   text-align: center;
   opacity: 0.9;
   font-style: italic;
