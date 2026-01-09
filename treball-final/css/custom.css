@@ -38,6 +38,16 @@
   margin: 0 !important;
 }
 
+.reveal .slides .title-slide > * {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.reveal .slides .title-slide .uni,
+.reveal .slides .title-slide #logos {
+  width: 100%;
+}
+
 /* Title slide layout */
 .reveal .slides section:first-of-type {
   display: grid;
