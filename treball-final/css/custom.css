@@ -43,7 +43,6 @@
   margin-right: 0 !important;
 }
 
-.reveal .slides .title-slide .uni,
 .reveal .slides .title-slide #logos {
   width: 100%;
 }
@@ -80,9 +79,9 @@
   justify-self: center;
 }
 
-.reveal .slides section:first-of-type #logos {
-  grid-column: 1 / -1;
+.reveal .slides #logos {
   display: flex;
+  flex-direction: row;
   justify-content: space-between; /* ← exactly what you want */
   align-items: center;
   width: 100%;
@@ -93,7 +92,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .reveal .slides section:first-of-type #UPenn_logo,
